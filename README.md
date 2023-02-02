@@ -1,0 +1,2 @@
+# MyAwesomeApp
+DevOps pipeline project
