@@ -9,7 +9,7 @@ stage ('Build') {
 sh "${mvnHome}/bin/mvn clean install -f MyAwesomeApp/pom.xml"
 }
 stage ('Code Quality Scan') {
-withSonarQubeEnv('SonarQube') {
+withSonarQubeEnv('SonarQube Tokenkey') {
 sh "${mvnHome}/bin/mvn sonar:sonar -f MyAwesomeApp/pom.xml"
    }
 }
